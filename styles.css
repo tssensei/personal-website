@@ -11,7 +11,6 @@
   --gray: #c8c4bc;
   --mid: #7a7570;
   --border: 1px solid #0a0a0a;
-  --sidebar-w: 300px;
 }
 
 html,
@@ -65,63 +64,12 @@ a:hover {
 }
 
 .shell {
-  display: grid;
-  grid-template-columns: var(--sidebar-w) 1fr;
   height: calc(100vh - 44px);
   margin-top: 44px;
 }
 
-.sidebar {
-  height: calc(100vh - 44px);
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  border-right: var(--border);
-  background: var(--white);
-}
-
-.sidebar::-webkit-scrollbar,
 .content::-webkit-scrollbar {
   width: 0;
-}
-
-.identity {
-  flex-shrink: 0;
-  padding: 1.25rem 1.75rem;
-  border-bottom: var(--border);
-}
-
-.identity p {
-  margin: 0 0 2px;
-  color: var(--black);
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.side-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  padding: 1.75rem 1.75rem;
-}
-
-.side-nav a {
-  width: fit-content;
-  color: var(--black);
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  line-height: 1.6;
-  text-transform: uppercase;
-  transition: color 0.1s;
-}
-
-.side-nav a.active,
-.side-nav a:hover {
-  color: var(--red);
 }
 
 .content {
@@ -299,27 +247,13 @@ a:hover {
   }
 
   .shell {
-    display: block;
     height: auto;
     margin-top: 0;
   }
 
-  .sidebar,
   .content {
     height: auto;
     overflow: visible;
-  }
-
-  .sidebar {
-    border-right: none;
-    border-bottom: var(--border);
-  }
-
-  .side-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 18px;
-    border-top: var(--border);
   }
 
   .panel-header,
