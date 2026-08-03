@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ziteng Song's personal portfolio for computer graphics, rendering, games, and machine learning systems."
+    />
+    <title>Ziteng Song</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Ziteng Song</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Computer Science · Cornell University</p>
+        <h1>Graphics, rendering, games, and ML systems.</h1>
+        <p class="hero-copy">
+          I build interactive systems and rendering projects across C++, WebGL,
+          TypeScript, Python, and Java.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="mailto:zs292@cornell.edu">Email Me</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-meta">C++ · Monte Carlo Rendering</p>
+            <h3>Physically-Based C++ Renderer</h3>
+            <p>
+              A Nori-based offline renderer with MIS path tracing,
+              heterogeneous participating media, delta tracking, BVH
+              acceleration, and Mitsuba validation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-meta">TypeScript · GLSL · WebGL</p>
+            <h3>GPU Fluid Simulation</h3>
+            <p>
+              A real-time GPU simulation and volumetric renderer using
+              SPH-style density estimation, spatial hashing, bitonic sort, and
+              ray marching.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-meta">C++ · CUGL · Mobile Game</p>
+            <h3>Gnome More Shrooms</h3>
+            <p>
+              A mobile farming and tower-defense game built by a 10-person
+              team, with crop resources, movable turrets, enemy waves, and map
+              expansion.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-meta">Java · LibGDX · Box2D</p>
+            <h3>Chroma Chameleon</h3>
+            <p>
+              A 2D stealth-action game featuring paint-based stealth,
+              raycast-based enemy detection, A* pathfinding, and deterministic
+              physics interactions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section split">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>AI Project Group Intern</h2>
+        </div>
+        <p>
+          Built data preprocessing, forecasting, and client segmentation
+          pipelines for sparse advertising time series using PyTorch, Pandas,
+          and clustering-based analysis.
+        </p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's connect.</h2>
+        <div class="contact-links">
+          <a href="mailto:zs292@cornell.edu">zs292@cornell.edu</a>
+          <a href="https://github.com/tssensei">github.com/tssensei</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Ziteng Song</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
