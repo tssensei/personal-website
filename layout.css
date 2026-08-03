@@ -1,0 +1,38 @@
+.site-layout {
+  display: grid;
+  grid-template-columns: 270px minmax(420px, 1fr);
+  width: min(1180px, calc(100vw - 64px));
+  margin: 34px auto 72px;
+}
+
+.site-sidebar {
+  min-width: 0;
+  padding-right: 32px;
+}
+
+.site-name {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+@media (max-width: 920px) {
+  .site-layout {
+    grid-template-columns: 1fr;
+    width: min(680px, calc(100vw - 40px));
+    margin-top: 28px;
+  }
+
+  .site-sidebar {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-layout {
+    width: calc(100vw - 32px);
+  }
+}

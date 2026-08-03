@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Final project report for Ziteng Song's physically based C++ renderer.">
   <title>Final Project Report | Ziteng Song</title>
+  <link rel="stylesheet" href="../layout.css">
   <style>
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 
@@ -40,29 +41,17 @@
   }
 
   .report-layout {
-    display: grid;
-    grid-template-columns: 270px minmax(420px, 1fr);
-    box-sizing: border-box;
-    width: min(1180px, calc(100vw - 64px));
-    margin: 34px auto 72px;
     align-items: start;
   }
 
   .report-sidebar {
     position: sticky;
     top: 34px;
-    box-sizing: border-box;
-    min-width: 0;
-    padding-right: 32px;
   }
 
   .report-sidebar h1 {
     margin: 0 0 10px !important;
     padding: 0 !important;
-    font-size: 24px !important;
-    font-weight: 400 !important;
-    line-height: 1.2 !important;
-    letter-spacing: 0 !important;
   }
 
   .report-course-link {
@@ -211,12 +200,6 @@
   }
 
   @media (max-width: 920px) {
-    .report-layout {
-      grid-template-columns: 1fr;
-      width: min(680px, calc(100vw - 40px));
-      margin-top: 28px;
-    }
-
     .report-sidebar {
       position: static;
       padding: 0 0 24px;
@@ -229,10 +212,6 @@
   }
 
   @media (max-width: 560px) {
-    .report-layout {
-      width: calc(100vw - 32px);
-    }
-
     .report-content h1 {
       font-size: 20px !important;
     }
@@ -249,9 +228,9 @@
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
-  <main class="report-layout">
-    <aside class="report-sidebar" aria-label="Report contents">
-      <h1><a class="report-name-link" href="../index.html">Ziteng Song</a></h1>
+  <main class="site-layout report-layout">
+    <aside class="site-sidebar report-sidebar" aria-label="Report contents">
+      <h1 class="site-name"><a class="report-name-link" href="../index.html">Ziteng Song</a></h1>
       <a class="report-course-link" href="https://www.cs.cornell.edu/courses/cs5630/2026sp/">Cornell CS5630</a>
       <h2 class="report-contents-title">Content</h2>
       <ol class="report-toc">
