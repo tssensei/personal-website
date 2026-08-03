@@ -29,7 +29,8 @@
 
   .report-layout {
     display: grid;
-    grid-template-columns: 270px minmax(0, 1fr);
+    grid-template-columns: 270px minmax(420px, 1fr);
+    box-sizing: border-box;
     width: min(1180px, calc(100vw - 64px));
     margin: 34px auto 72px;
     align-items: start;
@@ -38,15 +39,18 @@
   .report-sidebar {
     position: sticky;
     top: 34px;
+    box-sizing: border-box;
     min-width: 0;
     padding-right: 32px;
   }
 
   .report-sidebar h1 {
     margin: 0 0 10px !important;
+    padding: 0 !important;
     font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 1.2 !important;
+    letter-spacing: 0 !important;
   }
 
   .report-course-link {
@@ -90,6 +94,7 @@
   }
 
   .report-content.md {
+    box-sizing: border-box;
     width: auto !important;
     max-width: none !important;
     min-width: 0;
@@ -103,9 +108,11 @@
 
   .report-content .report-title {
     margin: 0 0 24px !important;
-    font-size: 28px !important;
+    padding: 0 !important;
+    font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 1.2 !important;
+    letter-spacing: 0 !important;
     text-align: left !important;
   }
 
@@ -188,10 +195,6 @@
   @media (max-width: 560px) {
     .report-layout {
       width: calc(100vw - 32px);
-    }
-
-    .report-content .report-title {
-      font-size: 24px !important;
     }
 
     .report-content h1 {
