@@ -226,7 +226,9 @@ a:hover {
 
 .project-links {
   display: flex;
-  gap: 12px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
   margin-top: 10px;
   font-size: 11px;
   line-height: 1.3;
