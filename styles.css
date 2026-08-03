@@ -100,8 +100,23 @@ a:hover {
 }
 
 .project-card {
+  --project-copy-shift: 0px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   border: var(--border);
   background: var(--white);
+}
+
+.project-card::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: var(--white);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .project-card:nth-child(even) {
@@ -113,6 +128,8 @@ a:hover {
 }
 
 .project-thumb {
+  position: relative;
+  z-index: 0;
   border-bottom: var(--border);
   background: #ececec;
 }
@@ -156,7 +173,30 @@ a:hover {
 }
 
 .project-copy {
+  position: relative;
+  z-index: 2;
   padding: 18px 17px;
+  transform: translateY(0);
+  transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+@media (hover: hover) {
+  .project-card:hover::after {
+    opacity: 1;
+  }
+
+  .project-card:hover .project-copy {
+    transform: translateY(calc(-1 * var(--project-copy-shift)));
+  }
+}
+
+.project-card:focus-within::after {
+  opacity: 1;
+}
+
+.project-card:focus-within .project-copy {
+  transform: translateY(calc(-1 * var(--project-copy-shift)));
 }
 
 .project-copy h3 {
@@ -173,6 +213,13 @@ a:hover {
   font-size: 12px;
   line-height: 1.35;
   letter-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card::after,
+  .project-copy {
+    transition-duration: 0.01ms;
+  }
 }
 
 @media (max-width: 920px) {
