@@ -39,7 +39,6 @@ a:hover {
 .homepage {
   display: grid;
   grid-template-columns: 270px minmax(420px, 1fr) 210px;
-  gap: 24px;
   width: min(1180px, calc(100vw - 64px));
   margin: 34px auto 72px;
 }
@@ -96,6 +95,10 @@ a:hover {
   line-height: 1.3;
   letter-spacing: 0;
   text-align: center;
+}
+
+.projects-column > h2 {
+  padding: 0 24px;
 }
 
 .links-column h2 {
