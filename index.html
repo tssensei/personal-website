@@ -11,102 +11,158 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top">Ziteng Song</a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="topbar">
+      <a class="wordmark" href="#top">Ziteng Song</a>
+      <div class="top-actions" aria-label="Status">
+        <span class="axis-mark" aria-hidden="true"></span>
+        <span class="red-dot" aria-hidden="true"></span>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <p class="eyebrow">Computer Science · Cornell University</p>
-        <h1>Graphics, rendering, games, and ML systems.</h1>
-        <p class="hero-copy">
-          I build interactive systems and rendering projects across C++, WebGL,
-          TypeScript, Python, and Java.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View Projects</a>
-          <a class="button secondary" href="mailto:zs292@cornell.edu">Email Me</a>
-        </div>
-      </section>
+    <div id="top" class="shell">
+      <aside class="sidebar" aria-label="Profile and navigation">
+        <section class="identity">
+          <p>Computer Science</p>
+          <p>Cornell University</p>
+          <p>Graphics / Rendering / Games</p>
+        </section>
 
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="project-meta">C++ · Monte Carlo Rendering</p>
-            <h3>Physically-Based C++ Renderer</h3>
-            <p>
-              A Nori-based offline renderer with MIS path tracing,
-              heterogeneous participating media, delta tracking, BVH
-              acceleration, and Mitsuba validation.
-            </p>
+        <nav class="side-nav" aria-label="Primary navigation">
+          <a class="active" href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Mail</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section id="projects" class="panel">
+          <div class="panel-header">
+            <h1>Selected Projects</h1>
+            <p>Portfolio</p>
+          </div>
+
+          <div class="year-row">2026</div>
+
+          <article class="project featured">
+            <div class="project-visual renderer-visual" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="project-body">
+              <div class="title-row">
+                <h2>Physically-Based C++ Renderer</h2>
+                <span class="tag">Rendering</span>
+              </div>
+              <p class="authors">C++, Monte Carlo Rendering, Path Tracing</p>
+              <p class="description">
+                Nori-based offline renderer with MIS path tracing,
+                heterogeneous participating media, delta tracking, BVH
+                acceleration, and Mitsuba validation.
+              </p>
+              <div class="links">
+                <a href="#">Page</a>
+                <a href="#">Report</a>
+                <a href="#">Code</a>
+              </div>
+            </div>
           </article>
 
-          <article class="project-card">
-            <p class="project-meta">TypeScript · GLSL · WebGL</p>
-            <h3>GPU Fluid Simulation</h3>
-            <p>
-              A real-time GPU simulation and volumetric renderer using
-              SPH-style density estimation, spatial hashing, bitonic sort, and
-              ray marching.
-            </p>
+          <article class="project">
+            <div class="project-body">
+              <div class="title-row">
+                <h2>GPU Fluid Simulation & Volumetric Rendering</h2>
+                <span class="tag">WebGL</span>
+              </div>
+              <p class="authors">TypeScript, GLSL, WebGL, Three.js</p>
+              <p class="description">
+                Real-time GPU simulation using SPH-style density estimation,
+                spatial hashing, bitonic sort, volumetric ray marching, and
+                SDF-based scene interactions.
+              </p>
+              <div class="links">
+                <a href="#">Demo</a>
+                <a href="#">Notes</a>
+                <a href="#">Code</a>
+              </div>
+            </div>
           </article>
 
-          <article class="project-card">
-            <p class="project-meta">C++ · CUGL · Mobile Game</p>
-            <h3>Gnome More Shrooms</h3>
-            <p>
-              A mobile farming and tower-defense game built by a 10-person
-              team, with crop resources, movable turrets, enemy waves, and map
-              expansion.
-            </p>
+          <div class="year-row">2025-2026</div>
+
+          <article class="project">
+            <div class="project-body">
+              <div class="title-row">
+                <h2>Gnome More Shrooms</h2>
+                <span class="tag">Game</span>
+              </div>
+              <p class="authors">C++, CUGL, Mobile Game Development</p>
+              <p class="description">
+                Software lead for a 10-person team building a mobile
+                farming/tower-defense game with crop resources, movable
+                turrets, enemy waves, map expansion, and base defense.
+              </p>
+              <div class="links">
+                <a href="#">Showcase</a>
+                <a href="#">Trailer</a>
+              </div>
+            </div>
           </article>
 
-          <article class="project-card">
-            <p class="project-meta">Java · LibGDX · Box2D</p>
-            <h3>Chroma Chameleon</h3>
-            <p>
-              A 2D stealth-action game featuring paint-based stealth,
-              raycast-based enemy detection, A* pathfinding, and deterministic
-              physics interactions.
-            </p>
+          <article class="project">
+            <div class="project-body">
+              <div class="title-row">
+                <h2>Chroma Chameleon</h2>
+                <span class="tag">Game</span>
+              </div>
+              <p class="authors">Java, LibGDX, Box2D</p>
+              <p class="description">
+                Software lead for an 8-person team building a cross-platform
+                2D stealth-action game with paint-based stealth, enemy
+                detection, A* pathfinding, and deterministic physics.
+              </p>
+              <div class="links">
+                <a href="#">Page</a>
+                <a href="#">Trailer</a>
+              </div>
+            </div>
           </article>
-        </div>
-      </section>
+        </section>
 
-      <section id="experience" class="section split">
-        <div>
-          <p class="eyebrow">Experience</p>
-          <h2>AI Project Group Intern</h2>
-        </div>
-        <p>
-          Built data preprocessing, forecasting, and client segmentation
-          pipelines for sparse advertising time series using PyTorch, Pandas,
-          and clustering-based analysis.
-        </p>
-      </section>
+        <section id="about" class="panel text-panel">
+          <div class="panel-header">
+            <h1>About</h1>
+          </div>
+          <p>
+            I am a computer science student at Cornell focused on graphics,
+            rendering, games, and machine learning systems. I like building
+            projects where technical systems turn into visible, interactive
+            results.
+          </p>
+        </section>
 
-      <section id="contact" class="section contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's connect.</h2>
-        <div class="contact-links">
-          <a href="mailto:zs292@cornell.edu">zs292@cornell.edu</a>
-          <a href="https://github.com/tssensei">github.com/tssensei</a>
-        </div>
-      </section>
-    </main>
+        <section id="experience" class="panel text-panel">
+          <div class="panel-header">
+            <h1>Experience</h1>
+          </div>
+          <p>
+            AI Project Group Intern at Wanka Huanju Culture Media, working on
+            preprocessing, forecasting, and client segmentation pipelines for
+            sparse advertising time series.
+          </p>
+        </section>
 
-    <footer class="site-footer">
-      <span>© <span id="year"></span> Ziteng Song</span>
-    </footer>
+        <section id="contact" class="panel text-panel">
+          <div class="panel-header">
+            <h1>Mail</h1>
+          </div>
+          <p>
+            <a href="mailto:zs292@cornell.edu">zs292@cornell.edu</a>
+            <span class="spacer">/</span>
+            <a href="https://github.com/tssensei">github.com/tssensei</a>
+          </p>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
