@@ -169,17 +169,9 @@ a:hover {
 }
 
 .project-meta {
-  margin-bottom: 16px;
   color: var(--mid);
   font-size: 12px;
   line-height: 1.35;
-  letter-spacing: 0;
-}
-
-.project-copy p:not(.project-meta) {
-  color: #33383f;
-  font-size: 12px;
-  line-height: 1.45;
   letter-spacing: 0;
 }
 
