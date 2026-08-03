@@ -76,8 +76,7 @@ a:hover {
   letter-spacing: 0;
 }
 
-.projects-column > h2,
-.links-column h2 {
+.projects-column > h2 {
   margin-bottom: 26px;
   font-size: 16px;
   font-weight: 400;
@@ -88,10 +87,6 @@ a:hover {
 
 .projects-column > h2 {
   padding: 0 24px;
-}
-
-.links-column h2 {
-  text-align: left;
 }
 
 .links-column ul {
