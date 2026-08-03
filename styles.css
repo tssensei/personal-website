@@ -98,11 +98,9 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  align-items: start;
 }
 
 .project-card {
-  min-height: 276px;
   border: var(--border);
   background: var(--white);
 }
@@ -116,9 +114,18 @@ a:hover {
 }
 
 .project-thumb {
-  height: 108px;
   border-bottom: var(--border);
   background: #ececec;
+}
+
+.project-thumb:empty {
+  min-height: 108px;
+}
+
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .renderer-thumb {
