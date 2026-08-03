@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 .site-layout {
   display: grid;
   grid-template-columns: 270px minmax(420px, 1fr);
