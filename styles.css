@@ -99,6 +99,12 @@ a:hover {
   gap: 0;
 }
 
+.project-stack {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
 .project-card {
   --project-copy-shift: 0px;
   position: relative;
@@ -119,11 +125,11 @@ a:hover {
   transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-card:nth-child(even) {
+.project-stack + .project-stack .project-card {
   border-left: 0;
 }
 
-.project-card:nth-child(n + 3) {
+.project-stack .project-card + .project-card {
   border-top: 0;
 }
 
@@ -246,14 +252,36 @@ a:hover {
 
 @media (max-width: 560px) {
   .project-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
-  .project-card:nth-child(even) {
+  .project-stack {
+    display: contents;
+  }
+
+  .project-stack + .project-stack .project-card {
     border-left: var(--border);
   }
 
-  .project-card:nth-child(n + 2) {
+  .project-card {
     border-top: 0;
+  }
+
+  .renderer-card {
+    order: 1;
+    border-top: var(--border);
+  }
+
+  .fluid-card {
+    order: 2;
+  }
+
+  .gnome-card {
+    order: 3;
+  }
+
+  .chroma-card {
+    order: 4;
   }
 }
