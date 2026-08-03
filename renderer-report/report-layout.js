@@ -28,12 +28,21 @@ window.addEventListener(
     sidebar.className = "report-sidebar";
     sidebar.setAttribute("aria-label", "Report contents");
 
-    const sidebarTitle = document.createElement("h1");
-    sidebarTitle.textContent = "Contents";
+    const nameHeading = document.createElement("h1");
+    const nameLink = document.createElement("a");
+    nameLink.className = "report-name-link";
+    nameLink.href = "../index.html";
+    nameLink.textContent = "Ziteng Song";
+    nameHeading.appendChild(nameLink);
 
-    const summary = document.createElement("p");
-    summary.className = "report-summary";
-    summary.innerHTML = "Final Project Report<br>Brian Song<br>Cornell CS5630";
+    const courseLink = document.createElement("a");
+    courseLink.className = "report-course-link";
+    courseLink.href = "https://www.cs.cornell.edu/courses/cs5630/2026sp/";
+    courseLink.textContent = "Cornell CS5630";
+
+    const contentsTitle = document.createElement("h2");
+    contentsTitle.className = "report-contents-title";
+    contentsTitle.textContent = "Content";
 
     const contents = document.createElement("ol");
     contents.className = "report-toc";
@@ -67,7 +76,7 @@ window.addEventListener(
       contents.appendChild(item);
     });
 
-    sidebar.append(sidebarTitle, summary, contents);
+    sidebar.append(nameHeading, courseLink, contentsTitle, contents);
     report.parentNode.insertBefore(layout, report);
     layout.append(sidebar, report);
   },
