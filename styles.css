@@ -67,17 +67,6 @@ a:hover {
   letter-spacing: 0;
 }
 
-.portrait {
-  width: 188px;
-  height: 235px;
-  margin-bottom: 32px;
-  border: var(--border);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(10, 10, 10, 0.08)),
-    radial-gradient(circle at 52% 36%, #f6d3bd 0 13%, transparent 14%),
-    linear-gradient(155deg, #84b7e5 0 44%, #f4f4f4 45% 56%, #26333d 57% 100%);
-}
-
 .profile-column p {
   max-width: 220px;
   margin-bottom: 18px;
