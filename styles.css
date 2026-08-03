@@ -228,7 +228,7 @@ a:hover {
   .renderer-card:hover .project-details {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 120ms;
+    transition-delay: 280ms;
   }
 }
 
