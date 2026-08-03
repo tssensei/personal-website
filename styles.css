@@ -175,6 +175,47 @@ a:hover {
   will-change: transform;
 }
 
+.project-details {
+  position: absolute;
+  z-index: 2;
+  top: 88px;
+  right: 17px;
+  left: 17px;
+  max-width: 430px;
+  color: var(--black);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(14px);
+  transition:
+    opacity 360ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-details-intro {
+  max-width: 360px;
+  margin-bottom: 22px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.project-details dl {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px 16px;
+  margin: 0;
+}
+
+.project-details dt,
+.project-details dd {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.project-details dt {
+  color: var(--mid);
+}
+
 @media (hover: hover) {
   .project-card:hover::after {
     opacity: 1;
@@ -182,6 +223,12 @@ a:hover {
 
   .project-card:hover .project-heading {
     transform: translateY(calc(-1 * var(--project-copy-shift)));
+  }
+
+  .renderer-card:hover .project-details {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 120ms;
   }
 }
 
@@ -191,6 +238,11 @@ a:hover {
 
 .project-card:focus-within .project-heading {
   transform: translateY(calc(-1 * var(--project-copy-shift)));
+}
+
+.renderer-card:focus-within .project-details {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-copy h3 {
@@ -221,7 +273,8 @@ a:hover {
 
 @media (prefers-reduced-motion: reduce) {
   .project-card::after,
-  .project-heading {
+  .project-heading,
+  .project-details {
     transition-duration: 0.01ms;
   }
 }
