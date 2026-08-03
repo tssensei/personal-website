@@ -221,6 +221,14 @@ a:hover {
   letter-spacing: 0;
 }
 
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .project-card::after,
   .project-copy {
