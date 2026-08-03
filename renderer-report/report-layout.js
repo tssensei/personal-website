@@ -15,6 +15,12 @@ window.addEventListener(
       generatedContents.remove();
     }
 
+    report.querySelectorAll(":scope > p").forEach((paragraph) => {
+      if (!paragraph.textContent.trim() && !paragraph.children.length) {
+        paragraph.remove();
+      }
+    });
+
     const layout = document.createElement("main");
     layout.className = "report-layout";
 
