@@ -129,10 +129,15 @@ a:hover {
   min-height: 108px;
 }
 
-.project-thumb img {
+.project-thumb img,
+.project-thumb video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.project-thumb video {
+  pointer-events: none;
 }
 
 .renderer-thumb {
