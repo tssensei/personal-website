@@ -38,17 +38,20 @@
       <section class="fluid-demo-column" aria-labelledby="fluid-demo-title">
         <h2 id="fluid-demo-title">GPU Fluid Simulation</h2>
         <div class="fluid-demo-stage" id="fluid-demo-stage">
-          <video
-            class="fluid-demo-fallback"
-            src="../img/fluid-loop-v3.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-          ></video>
-          <button class="fluid-demo-launch" id="fluid-demo-launch" type="button">Launch Demo</button>
-          <p class="fluid-demo-status" id="fluid-demo-status" role="status" hidden></p>
+          <div class="fluid-demo-preview">
+            <video
+              class="fluid-demo-fallback"
+              src="../img/fluid-loop-v3.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+            <button class="fluid-demo-launch" id="fluid-demo-launch" type="button">Launch Demo</button>
+            <p class="fluid-demo-status" id="fluid-demo-status" role="status" hidden></p>
+          </div>
+          <div class="fluid-demo-panel-placeholder" aria-hidden="true"></div>
         </div>
       </section>
     </main>
