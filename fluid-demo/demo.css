@@ -27,6 +27,15 @@
   background: #050505;
 }
 
+.fluid-demo-note {
+  width: min(100%, 910px);
+  margin: 12px 0 0;
+  color: var(--mid);
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
 .fluid-demo-preview {
   position: relative;
   min-width: 0;
@@ -78,6 +87,10 @@
   .fluid-demo-panel-placeholder {
     border-top: 1px solid #313640;
     border-left: 0;
+  }
+
+  .fluid-demo-note {
+    width: min(100%, 640px);
   }
 }
 
