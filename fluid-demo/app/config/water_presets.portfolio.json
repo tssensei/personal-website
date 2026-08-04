@@ -1,0 +1,31 @@
+{
+  "default": {
+    "shallowColor": [0.35, 0.95, 1.0],
+    "deepColor": [0.05, 0.25, 0.7],
+    "rimColor": [0.9, 1.0, 1.0],
+    "specularColor": [1.0, 1.0, 1.0],
+    "scattering": [0.12, 0.24, 0.4],
+    "spawnCenter": [0.0, 0.0, 2.0],
+    "respawnCenter": [0.0, 0.0, -1.0],
+    "respawnMaxPerFrame": 20,
+    "edgeCut": 0.3,
+    "maxOpacity": 0.5,
+    "gravity": 5.0,
+    "particleCount": 16384,
+    "sdfResolution": 96,
+    "volumeResolution": 32,
+    "glbModel": "./models/gltf/box_ripple_test3.glb",
+    "waterViewMarchStepSize": 0.01,
+    "waterMaxViewSteps": 4096,
+    "boundsVisible": false,
+    "containerVisible": true,
+    "containerWireframe": false,
+    "boxCenter": [0.0, 0.0, 1.0],
+    "boxSize": [7.0, 7.0, 5.0],
+    "camera": {
+      "position": [-3.0, -4.0, 3.0],
+      "target": [0.0, 0.0, 0.0],
+      "up": [0.0, 0.0, 1.0]
+    }
+  }
+}

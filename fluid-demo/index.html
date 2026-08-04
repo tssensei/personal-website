@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="../layout.css" />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./demo.css" />
   </head>
   <body>
     <main class="site-layout">
@@ -34,6 +35,23 @@
           <li><a href="#">CV</a></li>
         </ul>
       </aside>
+      <section class="fluid-demo-column" aria-labelledby="fluid-demo-title">
+        <h2 id="fluid-demo-title">GPU Fluid Simulation</h2>
+        <div class="fluid-demo-stage" id="fluid-demo-stage">
+          <video
+            class="fluid-demo-fallback"
+            src="../img/fluid-loop-v3.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+          <button class="fluid-demo-launch" id="fluid-demo-launch" type="button">Launch Demo</button>
+          <p class="fluid-demo-status" id="fluid-demo-status" role="status" hidden></p>
+        </div>
+      </section>
     </main>
+    <script src="./demo.js" defer></script>
   </body>
 </html>

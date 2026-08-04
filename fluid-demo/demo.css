@@ -1,0 +1,114 @@
+.fluid-demo-column {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fluid-demo-column > h2 {
+  margin-bottom: 26px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.fluid-demo-stage {
+  position: relative;
+  width: min(100%, 640px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: var(--border);
+  background: #050505;
+}
+
+.fluid-demo-fallback,
+.fluid-demo-frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fluid-demo-fallback {
+  object-fit: contain;
+}
+
+.fluid-demo-frame {
+  z-index: 2;
+  border: 0;
+  opacity: 0;
+  transition: opacity 180ms ease-out;
+}
+
+.fluid-demo-stage.is-ready .fluid-demo-frame {
+  opacity: 1;
+}
+
+.fluid-demo-launch {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  min-height: 36px;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--black);
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.fluid-demo-launch:hover,
+.fluid-demo-launch:focus-visible {
+  background: var(--white);
+  outline: none;
+}
+
+.fluid-demo-launch:disabled {
+  cursor: wait;
+}
+
+.fluid-demo-stage.is-ready .fluid-demo-launch {
+  display: none;
+}
+
+.fluid-demo-status {
+  position: absolute;
+  z-index: 4;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  padding: 7px 9px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--black);
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  .fluid-demo-column {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: var(--border);
+  }
+
+  .fluid-demo-column > h2 {
+    align-self: stretch;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fluid-demo-frame {
+    transition-duration: 0.01ms;
+  }
+}
