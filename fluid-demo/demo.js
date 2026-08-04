@@ -65,8 +65,12 @@
       status.hidden = true;
       sendVisibility();
     } else if (event.data.type === "error") {
-      console.error("Fluid demo initialization failed:", event.data.message || "Unknown error");
-      restoreFallback("The interactive demo is unavailable on this device.");
+      const detail =
+        typeof event.data.message === "string" && event.data.message.trim()
+          ? event.data.message.trim()
+          : "Unknown initialization error.";
+      console.error("Fluid demo initialization failed:", detail);
+      restoreFallback(`Initialization failed: ${detail}`);
     }
   });
 
