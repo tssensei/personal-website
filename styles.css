@@ -197,6 +197,17 @@ a:hover {
   line-height: 1.5;
 }
 
+.project-feature-list {
+  margin: -10px 0 0 18px;
+  padding: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.project-feature-list li {
+  margin-bottom: 5px;
+}
+
 .project-details dl {
   display: grid;
   grid-template-columns: 92px minmax(0, 1fr);
