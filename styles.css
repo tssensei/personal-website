@@ -340,7 +340,7 @@ a:hover {
     border-top: var(--border);
   }
 
-  .sdf-particle-card {
+  .fluid-card {
     order: 2;
   }
 
@@ -348,7 +348,7 @@ a:hover {
     order: 3;
   }
 
-  .fluid-card {
+  .sdf-particle-card {
     order: 4;
   }
 
