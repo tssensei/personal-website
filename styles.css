@@ -155,10 +155,7 @@ a:hover {
 }
 
 .gnome-thumb {
-  background:
-    radial-gradient(circle at 22% 62%, #c64d35 0 8%, transparent 9%),
-    radial-gradient(circle at 72% 42%, #f5d56c 0 9%, transparent 10%),
-    linear-gradient(150deg, #234d34, #84a65b 46%, #dfd8b8);
+  background: #fff;
 }
 
 .chroma-thumb {
