@@ -6,6 +6,7 @@
     "specularColor": [1.00, 1.00, 1.00],
     "scattering": [0.10, 0.20, 0.35],
     "lightDir": [-1.0, 0.4, 3.2],
+    "fresnelBlend": 0.3,
     "edgeCut": 0.32,
     "maxOpacity": 0.55,
     "particleCount": 20000,
