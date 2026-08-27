@@ -10,7 +10,7 @@
     "edgeCut": 0.32,
     "maxOpacity": 0.55,
     "particleCount": 20000,
-    "glbModel": "./models/gltf/purebox2.glb",
+    "glbModel": "./models/gltf/purebox2_y5.glb",
     "spawnCenter": [0.0, 1.0, 0.2],
     "respawnCenter": [0.0, 0.4, 0.2],
     "respawnEnabled": true,
