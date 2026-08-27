@@ -322,11 +322,11 @@ a:hover {
     border-top: var(--border);
   }
 
-  .fluid-card {
+  .gnome-card {
     order: 2;
   }
 
-  .gnome-card {
+  .fluid-card {
     order: 3;
   }
 
