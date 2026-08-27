@@ -340,11 +340,11 @@ a:hover {
     border-top: var(--border);
   }
 
-  .gnome-card {
+  .sdf-particle-card {
     order: 2;
   }
 
-  .sdf-particle-card {
+  .gnome-card {
     order: 3;
   }
 
