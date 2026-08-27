@@ -230,7 +230,8 @@ a:hover {
     transform: translateY(calc(-1 * var(--project-copy-shift)));
   }
 
-  .renderer-card:hover .project-details {
+  .renderer-card:hover .project-details,
+  .fluid-card:hover .project-details {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 280ms;
@@ -245,7 +246,8 @@ a:hover {
   transform: translateY(calc(-1 * var(--project-copy-shift)));
 }
 
-.renderer-card:focus-within .project-details {
+.renderer-card:focus-within .project-details,
+.fluid-card:focus-within .project-details {
   opacity: 1;
   transform: translateY(0);
 }

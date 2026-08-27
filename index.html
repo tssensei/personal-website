@@ -106,6 +106,23 @@
                   >Showcase</a>
                 </p>
               </div>
+              <div class="project-details">
+                <p class="project-details-intro">
+                  Built a GPU-resident SPH fluid simulator and volumetric water renderer for WebGL.
+                </p>
+                <dl>
+                  <dt>Simulation</dt>
+                  <dd>Predict-correct SPH with pressure, near-pressure, viscosity, and fixed substeps.</dd>
+                  <dt>GPU pipeline</dt>
+                  <dd>Particle state packed into floating-point textures with ping-pong updates and a same-frame density pass.</dd>
+                  <dt>Neighbors</dt>
+                  <dd>3D spatial hashing, parallel bitonic sort, and constant-time cell-range lookup.</dd>
+                  <dt>Collisions</dt>
+                  <dd>Mesh-to-SDF voxelization with trilinear distance and gradient sampling.</dd>
+                  <dt>Rendering</dt>
+                  <dd>Density-field ray marching with Beer-Lambert absorption, depth occlusion, and reconstructed normals.</dd>
+                </dl>
+              </div>
             </article>
 
             <article class="project-card chroma-card">
