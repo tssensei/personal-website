@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Selected results from Ziteng Song's physically based C++ renderer."
+    />
+    <title>Renderer Gallery | Ziteng Song</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+  </head>
+  <body>
+    <main class="site-layout gallery-layout">
+      <aside class="site-sidebar profile-column" aria-label="Profile">
+        <h1 class="site-name"><a href="../index.html">Homepage</a></h1>
+        <p>
+          I am a senior student majoring in computer science at Cornell University focused on computer vision
+          and graphics.
+        </p>
+        <p>
+          I am currently an undergraduate researcher in Professor Abe Davis's lab.
+        </p>
+        <ul class="profile-links" aria-label="Links">
+          <li><a href="https://github.com/tssensei">GitHub</a></li>
+          <li><a href="mailto:zs292@cornell.edu">Email</a></li>
+          <li><a href="#">CV</a></li>
+        </ul>
+      </aside>
+
+      <section class="gallery-column" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Renderer Gallery</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="./5630-bunnylight.png"
+              width="960"
+              height="540"
+              alt="Bunny scene rendered with multiple importance sampling"
+            />
+            <figcaption>
+              <strong>Bunny Light</strong>
+              <span>Multiple Importance Sampling</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./veach_mis.png"
+              width="768"
+              height="512"
+              alt="Veach scene rendered with multiple importance sampling"
+            />
+            <figcaption>
+              <strong>Veach Scene</strong>
+              <span>Multiple Importance Sampling</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./ajax-rough.png"
+              width="768"
+              height="768"
+              loading="lazy"
+              alt="Ajax bust rendered with a rough microfacet material"
+            />
+            <figcaption>
+              <strong>Rough Ajax</strong>
+              <span>Microfacet Material</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./ajax-smooth.png"
+              width="768"
+              height="768"
+              loading="lazy"
+              alt="Ajax bust rendered with a smooth microfacet material"
+            />
+            <figcaption>
+              <strong>Smooth Ajax</strong>
+              <span>Microfacet Material</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./cbox_mis.png"
+              width="800"
+              height="600"
+              loading="lazy"
+              alt="Cornell box rendered using path tracing and multiple importance sampling"
+            />
+            <figcaption>
+              <strong>Cornell Box</strong>
+              <span>Path Tracing + MIS</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="./cbox_envmap_vol_box.png"
+              width="800"
+              height="600"
+              loading="lazy"
+              alt="Cornell box with heterogeneous participating media and environment lighting"
+            />
+            <figcaption>
+              <strong>Cornell Box Volume</strong>
+              <span>Heterogeneous Participating Media</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
