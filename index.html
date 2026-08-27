@@ -74,44 +74,25 @@
               </div>
             </article>
 
-            <article class="project-card fluid-card">
-              <div class="project-thumb fluid-thumb" aria-hidden="true">
-                <video class="project-video" autoplay muted loop playsinline preload="auto">
-                  <source src="img/fluid-loop-v3.mp4" type="video/mp4" />
+            <article class="project-card sdf-particle-card">
+              <div class="project-thumb sdf-particle-thumb" aria-hidden="true">
+                <video class="project-video" autoplay muted loop playsinline preload="auto" poster="sdf.png">
+                  <source src="f52c7c8ffcb9cdb02056b2d9d01cc2ef.mp4" type="video/mp4" />
                 </video>
               </div>
               <div class="project-copy">
                 <div class="project-heading">
-                  <h3>GPU Fluid Simulation</h3>
-                  <p class="project-meta">TypeScript / GLSL / WebGL</p>
+                  <h3>SDF-based Interactive Particle Demo</h3>
+                  <p class="project-meta">TypeScript</p>
                 </div>
                 <p class="project-links">
-                  <a href="fluid-demo/index.html">Demo</a>
-                  <a href="fluid-demo/pipeline.html">Pipeline</a>
-                  <a href="fluid-demo/report.html">Report</a>
-                  <a
-                    href="https://www.cs.cornell.edu/courses/cs4620/2025fa/assignments/docs/assignments/FinalProject/standouts/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >Showcase</a>
+                  <a href="sdf-particle-demo/index.html">Demo</a>
                 </p>
               </div>
               <div class="project-details">
                 <p class="project-details-intro">
-                  Built a GPU-resident SPH fluid simulator and volumetric water renderer for WebGL.
+                  This is an interactive demo using Bezier splines and Signed Distance Field(SDF). Build your F1 car and have fun!
                 </p>
-                <dl>
-                  <dt>Simulation</dt>
-                  <dd>Predict-correct SPH with pressure, near-pressure, viscosity, and fixed substeps.</dd>
-                  <dt>GPU pipeline</dt>
-                  <dd>Particle state packed into floating-point textures with ping-pong updates and a same-frame density pass.</dd>
-                  <dt>Neighbor search</dt>
-                  <dd>3D spatial hashing, parallel bitonic sort, and constant-time cell-range lookup.</dd>
-                  <dt>Collisions</dt>
-                  <dd>Mesh-to-SDF voxelization with trilinear distance and gradient sampling.</dd>
-                  <dt>Rendering</dt>
-                  <dd>Density-field ray marching with Beer-Lambert absorption, depth occlusion, and reconstructed normals.</dd>
-                </dl>
               </div>
             </article>
 
@@ -155,25 +136,44 @@
               </div>
             </article>
 
-            <article class="project-card sdf-particle-card">
-              <div class="project-thumb sdf-particle-thumb" aria-hidden="true">
-                <video class="project-video" autoplay muted loop playsinline preload="auto" poster="sdf.png">
-                  <source src="f52c7c8ffcb9cdb02056b2d9d01cc2ef.mp4" type="video/mp4" />
+            <article class="project-card fluid-card">
+              <div class="project-thumb fluid-thumb" aria-hidden="true">
+                <video class="project-video" autoplay muted loop playsinline preload="auto">
+                  <source src="img/fluid-loop-v3.mp4" type="video/mp4" />
                 </video>
               </div>
               <div class="project-copy">
                 <div class="project-heading">
-                  <h3>SDF-based Interactive Particle Demo</h3>
-                  <p class="project-meta">TypeScript</p>
+                  <h3>GPU Fluid Simulation</h3>
+                  <p class="project-meta">TypeScript / GLSL / WebGL</p>
                 </div>
                 <p class="project-links">
-                  <a href="sdf-particle-demo/index.html">Demo</a>
+                  <a href="fluid-demo/index.html">Demo</a>
+                  <a href="fluid-demo/pipeline.html">Pipeline</a>
+                  <a href="fluid-demo/report.html">Report</a>
+                  <a
+                    href="https://www.cs.cornell.edu/courses/cs4620/2025fa/assignments/docs/assignments/FinalProject/standouts/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >Showcase</a>
                 </p>
               </div>
               <div class="project-details">
                 <p class="project-details-intro">
-                  This is an interactive demo using Bezier splines and Signed Distance Field(SDF). Build your F1 car and have fun!
+                  Built a GPU-resident SPH fluid simulator and volumetric water renderer for WebGL.
                 </p>
+                <dl>
+                  <dt>Simulation</dt>
+                  <dd>Predict-correct SPH with pressure, near-pressure, viscosity, and fixed substeps.</dd>
+                  <dt>GPU pipeline</dt>
+                  <dd>Particle state packed into floating-point textures with ping-pong updates and a same-frame density pass.</dd>
+                  <dt>Neighbor search</dt>
+                  <dd>3D spatial hashing, parallel bitonic sort, and constant-time cell-range lookup.</dd>
+                  <dt>Collisions</dt>
+                  <dd>Mesh-to-SDF voxelization with trilinear distance and gradient sampling.</dd>
+                  <dt>Rendering</dt>
+                  <dd>Density-field ray marching with Beer-Lambert absorption, depth occlusion, and reconstructed normals.</dd>
+                </dl>
               </div>
             </article>
 
