@@ -6,6 +6,12 @@
   container-type: inline-size;
 }
 
+@media (min-width: 921px) {
+  .site-layout {
+    width: min(1250px, calc(100vw - 64px));
+  }
+}
+
 .fluid-demo-column > h2 {
   margin-bottom: 26px;
   padding: 0 24px;
@@ -19,16 +25,16 @@
 .fluid-demo-stage {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 64fr) minmax(0, 27fr);
-  width: min(100%, 910px);
-  aspect-ratio: 91 / 64;
+  grid-template-columns: minmax(0, 64fr) minmax(0, 34fr);
+  width: min(100%, 980px);
+  aspect-ratio: 98 / 64;
   overflow: hidden;
   border: var(--border);
   background: #050505;
 }
 
 .fluid-demo-note {
-  width: min(100%, 910px);
+  width: min(100%, 980px);
   margin: 12px 0 0;
   color: var(--mid);
   font-size: 11px;
