@@ -248,23 +248,39 @@ a:hover {
     transform: translateY(0);
     transition-delay: 280ms;
   }
+
+  .project-card:focus-within::after {
+    opacity: 1;
+  }
+
+  .project-card:focus-within .project-heading {
+    transform: translateY(calc(-1 * var(--project-copy-shift)));
+  }
+
+  .renderer-card:focus-within .project-details,
+  .sdf-particle-card:focus-within .project-details,
+  .gnome-card:focus-within .project-details,
+  .fluid-card:focus-within .project-details,
+  .python-raytracer-card:focus-within .project-details {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.project-card:focus-within::after {
-  opacity: 1;
-}
+@media (hover: none), (pointer: coarse) {
+  .project-card.is-expanded::after {
+    opacity: 1;
+  }
 
-.project-card:focus-within .project-heading {
-  transform: translateY(calc(-1 * var(--project-copy-shift)));
-}
+  .project-card.is-expanded .project-heading {
+    transform: translateY(calc(-1 * var(--project-copy-shift)));
+  }
 
-.renderer-card:focus-within .project-details,
-.sdf-particle-card:focus-within .project-details,
-.gnome-card:focus-within .project-details,
-.fluid-card:focus-within .project-details,
-.python-raytracer-card:focus-within .project-details {
-  opacity: 1;
-  transform: translateY(0);
+  .project-card.is-expanded .project-details {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 120ms;
+  }
 }
 
 .project-copy h3 {
