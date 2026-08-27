@@ -158,11 +158,8 @@ a:hover {
   background: #fff;
 }
 
-.chroma-thumb {
-  background:
-    linear-gradient(90deg, rgba(209, 0, 0, 0.72), transparent 28%),
-    radial-gradient(circle at 72% 62%, #54a6a2 0 13%, transparent 14%),
-    linear-gradient(135deg, #121516, #46505c 58%, #e6e3d6);
+.python-raytracer-thumb {
+  background: #fff;
 }
 
 .project-copy {
@@ -332,7 +329,7 @@ a:hover {
     order: 3;
   }
 
-  .chroma-card {
+  .python-raytracer-card {
     order: 4;
   }
 }
