@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SDF-based interactive particle demo by Ziteng Song."
+    />
+    <title>SDF-based Interactive Particle Demo | Ziteng Song</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./demo.css" />
+  </head>
+  <body>
+    <main class="site-layout sdf-demo-layout">
+      <aside class="site-sidebar profile-column" aria-label="Profile">
+        <h1 class="site-name"><a href="../index.html">Homepage</a></h1>
+        <p>
+          I am a senior student majoring in computer science at Cornell University focused on computer vision
+          and graphics.
+        </p>
+        <p>
+          I am currently an undergraduate researcher in Professor Abe Davis's lab.
+        </p>
+        <ul class="profile-links" aria-label="Links">
+          <li><a href="https://github.com/tssensei">GitHub</a></li>
+          <li><a href="mailto:zs292@cornell.edu">Email</a></li>
+          <li><a href="#">CV</a></li>
+        </ul>
+      </aside>
+
+      <section class="sdf-demo-column" aria-labelledby="sdf-demo-title">
+        <h2 id="sdf-demo-title">SDF-based Interactive Particle Demo</h2>
+        <iframe
+          class="sdf-demo-frame"
+          src="./app/index.html"
+          title="Interactive SDF particle and F1 car construction demo"
+        ></iframe>
+        <p class="sdf-demo-description">
+          This is an interactive demo using a Signed Distance Field (SDF). Build your F1 car and have fun!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
