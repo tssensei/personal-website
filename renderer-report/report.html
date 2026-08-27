@@ -50,16 +50,36 @@
   }
 
   .report-sidebar h1 {
-    margin: 0 0 10px !important;
+    margin: 0 0 20px !important;
     padding: 0 !important;
   }
 
   .report-course-link {
     display: block;
-    margin: 0 0 26px !important;
+    margin: 26px 0 !important;
     color: var(--report-black) !important;
     font-size: 13px !important;
     line-height: 1.55 !important;
+  }
+
+  .report-sidebar p {
+    max-width: 220px;
+    margin: 0 0 18px !important;
+    color: var(--report-black) !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .report-sidebar .profile-links {
+    margin: 28px 0 0 18px !important;
+    padding: 0 !important;
+  }
+
+  .report-sidebar .profile-links li {
+    margin: 0 0 4px !important;
+    color: var(--report-black) !important;
+    font-size: 13px !important;
+    line-height: 1.45 !important;
   }
 
   .report-contents-title {
@@ -82,6 +102,7 @@
 
   .report-name-link,
   .report-course-link,
+  .profile-links a,
   .report-toc a {
     color: inherit !important;
     text-decoration: underline !important;
@@ -90,6 +111,7 @@
 
   .report-name-link:hover,
   .report-course-link:hover,
+  .profile-links a:hover,
   .report-toc a:hover {
     color: #d10000 !important;
   }
@@ -229,8 +251,20 @@
 </head>
 <body>
   <main class="site-layout report-layout">
-    <aside class="site-sidebar report-sidebar" aria-label="Report contents">
+    <aside class="site-sidebar report-sidebar" aria-label="Profile and report contents">
       <h1 class="site-name"><a class="report-name-link" href="../index.html">Homepage</a></h1>
+      <p>
+        I am a senior student majoring in computer science at Cornell University focused on computer vision
+        and graphics.
+      </p>
+      <p>
+        I am currently an undergraduate researcher in Professor Abe Davis's lab.
+      </p>
+      <ul class="profile-links" aria-label="Links">
+        <li><a href="https://github.com/tssensei">GitHub</a></li>
+        <li><a href="mailto:zs292@cornell.edu">Email</a></li>
+        <li><a href="#">CV</a></li>
+      </ul>
       <a class="report-course-link" href="https://www.cs.cornell.edu/courses/cs5630/2026sp/">Cornell CS5630</a>
       <h2 class="report-contents-title">Content</h2>
       <ol class="report-toc">

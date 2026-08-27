@@ -3,6 +3,8 @@
 }
 
 .pipeline-course {
+  display: inline-block;
+  margin-top: 24px;
   font-size: 13px;
 }
 
