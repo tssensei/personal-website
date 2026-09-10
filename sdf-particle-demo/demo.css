@@ -28,6 +28,13 @@
   line-height: 1.5;
 }
 
+.sdf-demo-credit {
+  margin-top: 14px;
+  color: var(--mid);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 @media (max-width: 920px) {
   .sdf-demo-column {
     margin-top: 24px;
