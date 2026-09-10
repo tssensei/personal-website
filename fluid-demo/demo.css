@@ -43,10 +43,12 @@
 }
 
 .fluid-demo-credit {
+  width: min(100%, 980px);
   margin: 14px 0 0;
   color: var(--mid);
   font-size: 12px;
   line-height: 1.5;
+  text-align: left;
 }
 
 .fluid-demo-preview {
