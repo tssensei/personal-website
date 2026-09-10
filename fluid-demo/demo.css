@@ -42,6 +42,13 @@
   letter-spacing: 0;
 }
 
+.fluid-demo-credit {
+  margin: 14px 0 0;
+  color: var(--mid);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .fluid-demo-preview {
   position: relative;
   min-width: 0;
