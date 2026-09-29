@@ -70,7 +70,8 @@ a:hover {
 }
 
 .profile-links {
-  margin: 28px 0 0 18px;
+  margin: 28px 0 0;
+  list-style: none;
 }
 
 .profile-links li {
