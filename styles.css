@@ -90,6 +90,12 @@ a:hover {
   flex-direction: column;
 }
 
+.featured-project {
+  grid-column: 1 / -1;
+  border: var(--border);
+  margin-bottom: 24px;
+}
+
 .project-card {
   --project-copy-shift: 0px;
   position: relative;
