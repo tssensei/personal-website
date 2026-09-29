@@ -45,6 +45,21 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.profile-photo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+  border: var(--border);
+}
+
+@media (min-width: 921px) {
+  .homepage .profile-column h1 {
+    margin-bottom: 18px;
+  }
+}
+
 .profile-column p {
   max-width: 220px;
   margin-bottom: 18px;
