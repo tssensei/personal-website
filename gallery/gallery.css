@@ -23,6 +23,10 @@
   min-width: 0;
 }
 
+.gallery-item-wide {
+  grid-column: 1 / -1;
+}
+
 .gallery-item img {
   display: block;
   width: 100%;
