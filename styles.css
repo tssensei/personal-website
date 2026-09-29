@@ -92,8 +92,6 @@ a:hover {
 
 .featured-project {
   grid-column: 1 / -1;
-  border: var(--border);
-  margin-bottom: 24px;
 }
 
 .project-card {
@@ -120,7 +118,7 @@ a:hover {
   border-left: 0;
 }
 
-.project-stack .project-card + .project-card {
+.project-stack .project-card {
   border-top: 0;
 }
 
@@ -357,9 +355,12 @@ a:hover {
     border-top: 0;
   }
 
+  .featured-project {
+    border-top: var(--border);
+  }
+
   .renderer-card {
     order: 1;
-    border-top: var(--border);
   }
 
   .sdf-particle-card {
